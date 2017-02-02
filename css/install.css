@@ -1,0 +1,45 @@
+        body{
+            background:#CCCCCC;
+            width:60%;
+            margin-left:20%;
+        }
+        .option-bulle{
+            width:150px;
+            margin-bottom:3px;
+        }
+        label, p, li{
+            font-size:1.3em;
+        }
+        label{
+            cursor: pointer;
+            color:white;
+        }
+        header{
+            color: #fff;
+            background: #A2A9AE;
+            padding: 8px 17px 8px 20px;
+            overflow: hidden; /* clearfix */
+            background-image: url('img/background@3x.png');
+        }
+        header h1{
+            display: block;
+            float: left;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            line-height: 36px;
+            background-image: url('img/marqueur@3x.png');
+            background-repeat: no-repeat;
+            width: 217px;
+            height: 36px;
+            margin: 6px 0;
+            /* hide text */
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+.centre {
+    text-align:center;
+}

@@ -1,0 +1,293 @@
+/* Micro resets */
+
+html{
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.25;
+	margin: 0;
+	color: #16212c;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+/* Global style */
+
+h1{
+	position: relative;
+	margin: 0;
+	color: #fff;
+	display: block;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	line-height: 60px;
+	background-image: url('../img/marqueur@2x-min.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: contain;
+	width: 100%;
+	height: 60px;
+	margin-bottom: 10px;
+	/* hide text */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+h2{
+	font-size: 1.250em;
+	margin-top: 0;
+	margin-bottom: .25em;
+	line-height: 1.24;
+}
+
+h3{
+	margin-top: .25em;
+	margin-bottom: .25em;
+	font-size: 1.875em;
+}
+
+h4{
+	font-size: 1em;
+}
+
+.main{
+	padding: 25px;
+}
+
+header{
+	color: #fff;
+	background: #1F0D67 url('../img/background-xs@2x-min.png') no-repeat center;
+	background-size: 100%;
+	background-size: cover;
+	padding: 38px 30px 15px;
+	overflow: hidden;
+}
+
+.logo{
+	text-align: center;
+	font-size: 0.875em;
+}
+
+.lemonde{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	background-image: url('../img/lemonde@2x-min.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	background-size: contain;
+	/* hide text */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+figure{
+	display: block;
+	position: relative;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+ul{
+	padding-left: 20px;
+}
+
+ul img{
+	margin-left: -20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: calc(100% + 20px);
+}
+
+.font-small{
+	font-size: 0.813em;
+}
+
+.colored{
+	color: #032553;
+}
+
+a{
+	color: #16212c;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover, a:focus{
+	text-decoration: underline;
+}
+
+a.more:after, .button.more:after{
+	content: " \203A";
+}
+
+.content{
+	overflow: hidden; /* clearfix */
+}
+
+form{
+	display: block;
+	max-width: 280px;
+	overflow: hidden;
+}
+
+form h4{
+	margin-left: 50%;
+	margin-top: 1em;
+	margin-bottom: .5em;
+	width: 50%;
+	text-align: center;
+}
+
+label{
+	font-size: .875em;
+}
+
+.form-group{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: .5em;
+	overflow: hidden;
+}
+
+.collaboratif, .parodique, .tres-peu-fiable, .peu-fiable, .plutot-fiable{
+	text-align: left;
+	display: block;
+}
+
+.collaboratif{
+	color: #5d666d;
+}
+.parodique{
+	color: #129AF0;
+}
+.tres-peu-fiable{
+	color: #D50303;
+}
+.peu-fiable{
+	color: #F5A725;
+}
+.plutot-fiable{
+	color: #468847;
+}
+
+.row{
+	margin-left: -10px;
+	margin-right: -10px;
+	overflow: hidden;
+}
+
+.col-half{
+	float: left;
+	width: 50%;
+}
+
+.xs-display-none{
+	display: none;
+}
+
+.relative{
+	position: relative;
+}
+
+.center{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+}
+
+@media screen and (min-width: 670px){
+	.main{
+		position: relative;
+		max-width: 600px;
+	}
+
+	header{
+		padding: 20px 0 27px 0;
+		background-image: url('../img/background@2x-min.png');
+	}
+
+	header .center{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	h1{
+		width: 372px;
+		float: left;
+		margin: 0;
+	}
+
+	.logo{
+		padding-top: 28px;
+		float: right;
+	}
+
+	.lemonde{
+		width: 130px;
+		height: 28px;
+	}
+
+	.s-display-none{ display: none; }
+	.s-display-block{ display: block; }
+	.s-display-inline{ display: inline; }
+}
+
+@media screen and (min-width: 1000px){
+
+	figure{
+		position: absolute;
+		left: 100%;
+		top: 0;
+		max-width: 360px;
+		margin-left: 50px;
+	}
+
+	figcaption{
+		text-align: left;
+	}
+
+	figure img{
+		width: 100%;
+		margin: 0;
+	}
+
+	.notifications{
+		transform: translateY(-30px);
+	}
+
+	.extension{
+		transform: translateY(50px);
+	}
+
+	.verifier{
+		transform: translateY(-50%);
+	}
+
+	li{
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	.m-display-block{ display: block; }
+}

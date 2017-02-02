@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debunker</title>
+	<link href="css/main.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="decodex">
+        <header>
+            <h1>Décodex</h1>
+            <button class="options" id="params"><svg aria-hidden="true" id="parametres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><style type="text/css">.gear{fill:#a2a9ae;}</style><path class="gear" d="M20,11.4V8.6l-2.4-0.7c-0.2-0.6-0.4-1.2-0.7-1.8l1.2-2.2l-2-2l-2.2,1.2c-0.6-0.3-1.1-0.6-1.8-0.7 L11.4,0H8.6L7.9,2.4C7.3,2.6,6.7,2.9,6.1,3.2L3.9,1.9l-2,2l1.2,2.2C2.9,6.7,2.6,7.3,2.4,7.9L0,8.6v2.8l2.4,0.7 c0.2,0.6,0.4,1.2,0.7,1.8l-1.2,2.2l2,2l2.2-1.2c0.6,0.3,1.1,0.6,1.8,0.7L8.6,20h2.8l0.7-2.4c0.6-0.2,1.2-0.4,1.8-0.7l2.2,1.2l2-2 l-1.2-2.2c0.3-0.6,0.6-1.1,0.7-1.8L20,11.4z M10,14.7c-2.6,0-4.7-2.1-4.7-4.7S7.4,5.3,10,5.3s4.7,2.1,4.7,4.7S12.6,14.7,10,14.7z"/></svg><span>Paramères</span></button>
+        </header>
+        <div class="content" id="decodex-window">
+            <h2 id="site-name"></h2>
+            <p id="notule"></p>
+            <h2>Ce site est-il fiable ?</h2>
+            <p id="our-opinion" class="our-opinion"></p>
+            <a id="more-info" class="button more">En savoir plus</a>
+        </div>
+        <div class="content" id="parameters">
+            <h2 class="title-params">Paramètres</h2>
+                <p>Affichage de l'infobulle: adaptez vos préférences selon les catégories de sites</p>
+                <div id="alert0" class="option-bulle">
+                    <input id="check-alert0" type="checkbox">
+                    <label for="check-alert0">Collaboratif</label><br>
+                </div>
+                <div id="alert1" class="option-bulle">
+                    <input id="check-alert1" type="checkbox">
+                    <label for="check-alert1">Parodique</label><br>
+                </div>
+                <div id="alert2" class="option-bulle">
+                    <input id="check-alert2" type="checkbox">
+                    <label for="check-alert2">Très peu fiable</label><br>
+                </div>
+                <div id="alert3" class="option-bulle">
+                    <input id="check-alert3" type="checkbox">
+                    <label for="check-alert3">Peu fiable</label><br>
+                </div>
+                <div id="alert4" class="option-bulle">
+                    <input id="check-alert4" type="checkbox">
+                    <label for="check-alert4">Plutôt fiable</label>
+                </div>
+        </div>
+        <div class="content" id="verif">
+            <p class="our-opinion">
+                Nous n’avons pas encore vérifié ce site. Aidez-nous à améliorer le Décodex en remplissant ce formulaire accessible en cliquant sur le bouton ci-dessous.
+            </p>
+            <a target="_blank" href="https://goo.gl/forms/VhVupMq7nk4taQib2" class="button">Vérifier ce site</a>
+        </div>
+    </div>
+    <footer>
+            <p class="propos-par">Proposé par<img class="lemonde" src="img/lemonde.png"></p>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
