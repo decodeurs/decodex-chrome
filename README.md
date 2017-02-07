@@ -5,3 +5,4 @@ If you intend to re-use this code to create your own extension, please let us kn
 You'll need to develop your own backend to send data in JSON array. Alternatively, you may also modify it and store your data in the extension.
 The extension updates data every 24 hours.
 The extension does not store any data from user.
+The extension is also likely to be updated within the first semester of 2017.

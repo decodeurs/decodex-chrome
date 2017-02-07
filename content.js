@@ -36,6 +36,7 @@
 
     var infobulle;
     var removeTimeout;
+    var removeAfter = 10000; // En milliseconde
 
     var messages = [
         "Attention, ce site n&rsquo;est pas une source &agrave; proprement parler ou sa fiabilit&eacute; est trop variable pour entrer dans nos crit&egrave;res. Pour en savoir plus, cherchez d&rsquo;autres sources et remontez &agrave; l&rsquo;origine de l&rsquo;information.",
@@ -157,7 +158,6 @@
                     var more = createChild(content, 'p');
 
             // Ajout du style
-            var removeAfter = 10000; // En milliseconde
             var forceImportant = true;
             var currentColor = colors[note];
 
@@ -275,7 +275,14 @@
             appendText(picto, '!');
             appendText(close, 'Fermer');
             text.innerHTML = messages[note];
-            more.innerHTML = "<span style='vertical-align:middle;'>+ d'infos en cliquant sur &nbsp;</span>" + "<img style='vertical-align:middle;' src='" + icones[note] + "'>";
+            var icone = new Image();
+            icone.src = icones[note];
+            css(icone, [reset, {
+                'vertical-align':'middle',
+                'display': "inline-block"
+            }], forceImportant);
+            more.innerHTML = "<span style='vertical-align:middle;'>+ d'infos en cliquant sur &nbsp;</span>";
+            more.appendChild(icone);
             // Bind des event au clique
 
             close.addEventListener('click', closeInfoBulle);

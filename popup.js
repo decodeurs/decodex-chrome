@@ -76,7 +76,7 @@ function main() {
         document.querySelector("#decodex-window").style.display = "block";
         document.querySelector("#verif").classList.remove("active");
         document.querySelector("#decodex-window").classList.add('active');
-        document.querySelector("#more-info").href = "http://lemonde.fr/verification/source/" + background.slug + "/";
+        document.querySelector("#more-info").href = "http://lemonde.fr/verification/source/" + background.slug + "/?xtor=AL-33281008-[extension]";
     }
     else {
         document.querySelector("#verif").style.display = "block";
@@ -110,11 +110,12 @@ function main() {
                 }
             }
     });
-    console.log(document.querySelector('#more-info'));
     document.querySelector('#more-info').addEventListener('click', function(e){
         if(e.target.href!==undefined){
             chrome.tabs.create({url:e.target.href});
         }
+        e.preventDefault();
+        window.close();
     });
     for(var i=0;i<5;i++){
         document.querySelector("#alert"+i).style.color = colors[i];
